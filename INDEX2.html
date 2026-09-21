@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            background-color: #aeeaf5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 80vh;
+        }
+
+        fieldset{
+            border: 2px solid rgb(98, 201, 248);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            background-color: white;
+
+        }
+
+        legend{
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        label{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        input{
+           width: 100%;
+           padding: 8px;
+           border: 1px solid black;
+           border-radius: 4px;
+           box-sizing: border-box; 
+        }
+
+        input :focus{
+            border-color: blueviolet;
+            outline: none;
+        }
+        
+        button{
+            margin-top: 15px;
+            background-color: greenyellow;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+    </style>
+    
+    <form action="">
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <button type="submit">Enviar Dados</button>
+    </fieldset>
+
+    </form>
+
+</body>
+</html>
